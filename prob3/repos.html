@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body>  
+
+    <script>
+        const button = document.getElementsByTagName("button")[0]
+        button.addEventListener("click", async function
+        fetchGithubData() {
+        async function fetchGithubData() {
+            try {
+                const data = await fetch("repo link").then((response) => response.
+                json())
+                // console.log(data)
+            
+
+                data.forEach(element => {
+                    const pName = document.createElement("p") 
+                    pName.innerText = element["name"]
+                    button.insertAdjacentElement("afterend", pName)
+                });
+
+            } catch (error) {
+                onsole.log("Error fetching data: ", error)
+            }
+        }
+    </script>
+</body>
+
+
+</head>
+</html>

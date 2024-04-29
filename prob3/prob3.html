@@ -1,33 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* CSS styles here */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 20%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .item:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
 <header>
     <h1><u>Portfolio</u></h1>
     <hr>
 </header>
 
 <nav>
-    <a href="https://www.example.com">Home</a>
-    <a href="https://www.example.com">About</a>
-    <a href="https://www.example.com">Portfolio</a>
-    <a href="https://www.example.com">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<article>
+<article id="home">
     <section>
         <h2><u>Welcome</u></h2>
-        <p>This is my portfolio page. This is where I list<br>
-            various things that I've worked on.</p>
+        <p>This is my portfolio page. This is where I list various things that I've worked on.</p>
     </section>
 
-    <section>
+    <section id="about">
+        <h2><u>About</u></h2>
+        <p>Here, you can provide information about yourself, your skills, and experiences.</p>
+    </section>
+
+    <section id="portfolio">
         <h2><u>Work Samples</u></h2>
-        <p>This is my portfolio page. This is where I list<br>
-            various things that I've worked on.</p>
+        <div class="gallery">
+            <div class="item">
+                <img src="img1.png" alt="Image 1">
+                <p>Work Example 1 (COMP - 3410)</p>
+            </div>
+            <div class="item">
+                <img src="img1.png" alt="Image 2">
+                <p>Work Example 2 (COMP - 3410)</p>
+            </div>
+            <div class="item">
+                <img src="img1.png" alt="Image 3">
+                <p>Work Example 3 (COMP - 3410)</p>
+            </div>
+        </div>
     </section>
 
-    <section class="gallery-item">
-        <h2><u>Contacts</u></h2>
+    <section id="contact">
+        <h2><u>Contact</u></h2>
         <p><b>Email:</b> TestEmail@website.com<br>
             <b>Phone Number:</b> 123-456-7890</p>
     </section>
 </article>
 
 <hr>
+
+</body>
+</html>
